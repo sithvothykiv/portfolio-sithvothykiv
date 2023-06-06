@@ -54,34 +54,31 @@ class _EducationDesktopState extends State<EducationDesktop> {
           ),
           child: Column(
             children: [
-              Visibility(
-                visible: width < 1000,
-                child: Container(
-                  width: 50,
-                  height: 50,
-                  margin: const EdgeInsets.only(bottom: 5.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(5.0),
-                    image: DecorationImage(
-                      image: AssetImage('assets/education/${widget.image}'),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-              ),
+              // Visibility(
+              //   visible: width < 1000,
+              //   child: Container(
+              //     width: 100,
+              //     height: 100,
+              //     margin: const EdgeInsets.only(bottom: 5.0),
+              //     decoration: BoxDecoration(
+              //       borderRadius: BorderRadius.circular(5.0),
+              //       image: DecorationImage(
+              //         image: AssetImage('assets/education/${widget.image}'),
+              //         fit: BoxFit.contain,
+              //       ),
+              //     ),
+              //   ),
+              // ),
               Row(
                 children: [
-                  Visibility(
-                    visible: width >= 1000,
-                    child: Container(
-                      width: 100,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5.0),
-                        image: DecorationImage(
-                          image: AssetImage('assets/education/${widget.image}'),
-                          fit: BoxFit.cover,
-                        ),
+                  Container(
+                    width: 140,
+                    height: 140,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5.0),
+                      image: DecorationImage(
+                        image: AssetImage('assets/education/${widget.image}'),
+                        fit: BoxFit.contain,
                       ),
                     ),
                   ),

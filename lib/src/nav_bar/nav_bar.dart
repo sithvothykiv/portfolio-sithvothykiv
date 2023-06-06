@@ -7,10 +7,10 @@ import 'nav_bar_btn.dart';
 class NavBar extends StatelessWidget {
   const NavBar({
     Key? key,
-    required this.isDarkModeBtnVisible,
+    // required this.isDarkModeBtnVisible,
   }) : super(key: key);
 
-  final bool isDarkModeBtnVisible;
+  // final bool isDarkModeBtnVisible;
 
   @override
   Widget build(BuildContext context) {
@@ -54,10 +54,10 @@ class NavBar extends StatelessWidget {
               tabNumber: 6,
               btnNumber: ' 06. ',
               btnName: 'Contact Me'),
-          Visibility(
-            visible: isDarkModeBtnVisible,
-            child: const ThemeButton(),
-          )
+          // Visibility(
+          //   visible: isDarkModeBtnVisible,
+          //   child: const ThemeButton(),
+          // )
         ],
       ),
     );

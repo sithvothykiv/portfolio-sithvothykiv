@@ -77,8 +77,8 @@ class _ProgressState extends State<Progress>
                 child: LinearProgressIndicator(
                   value: animationController.value,
                   valueColor:
-                      AlwaysStoppedAnimation(Theme.of(context).cardColor),
-                  backgroundColor: Theme.of(context).cardColor.withOpacity(0.5),
+                      AlwaysStoppedAnimation(Theme.of(context).primaryColor),
+                  backgroundColor: Theme.of(context).cardColor.withOpacity(0.8),
                 ),
               ),
             ),

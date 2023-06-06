@@ -24,18 +24,19 @@ class WhatIdo extends StatelessWidget {
           padding: EdgeInsets.only(bottom: height * 0.1),
           child: LayoutBuilder(
               builder: (BuildContext context, BoxConstraints constraints) {
-            if (constraints.maxWidth < 1000) {
-              int storage = -1;
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(15, 10, 15, 20),
-                    child: CustomText(
-                        text: '⚡ I have a good proficiency in:',
-                        fontSize: 15,
-                        color: Theme.of(context).primaryColorLight),
-                  ),
+            // if (constraints.maxWidth < 1000) {
+            int storage = -1;
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(15, 10, 15, 20),
+                  child: CustomText(
+                      text: '⚡ I have a good proficiency in:',
+                      fontSize: constraints.maxWidth < 1000 ? 20 : 35,
+                      color: Theme.of(context).primaryColorLight),
+                ),
+                if (constraints.maxWidth < 1000)
                   Padding(
                     padding: const EdgeInsets.only(
                       bottom: 25.0,
@@ -49,7 +50,7 @@ class WhatIdo extends StatelessWidget {
                           currentTheme.currentTheme == ThemeMode.dark
                               ? 'assets/what_i_do/constant/checklist.png'
                               : 'assets/what_i_do/constant/checklist-light.png',
-                          scale: 2,
+                          scale: width < 1000 ? 1.5 : 1,
                         ),
                         Column(
                           children: List.generate(
@@ -66,56 +67,8 @@ class WhatIdo extends StatelessWidget {
                         ),
                       ],
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(15, 30, 15, 20),
-                    child: CustomText(
-                        text: data[1].isNotEmpty
-                            ? '⚡ Some languages & tools I use:'
-                            : '',
-                        fontSize: 15,
-                        color: Theme.of(context).primaryColorLight),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(15, 25, 15, 20),
-                    child: Column(
-                      children: List.generate(
-                        data[1].length % 4 == 0
-                            ? data[1].length ~/ 4
-                            : data[1].length ~/ 4 + 1,
-                        (int i) => Padding(
-                          padding: const EdgeInsets.only(bottom: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: List.generate(
-                                (data[1].length - storage - 1) >= 4
-                                    ? 4
-                                    : data[1].length - storage - 1,
-                                (int index) {
-                              storage = index + i * 4;
-                              return Image.asset(
-                                'assets/what_i_do/${data[1][index + i * 4]}',
-                              );
-                            }),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              );
-            } else {
-              int storage = -1;
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(70, 10, 70, 20),
-                    child: CustomText(
-                        text: '⚡ I have a good proficiency in:',
-                        fontSize: 35,
-                        color: Theme.of(context).primaryColorLight),
-                  ),
+                  )
+                else
                   Padding(
                     padding: const EdgeInsets.only(bottom: 25.0),
                     child: Row(
@@ -125,7 +78,7 @@ class WhatIdo extends StatelessWidget {
                           children: List.generate(
                             data[0].length,
                             (int index) => Progress(
-                              width: width / 2,
+                              width: width / 1.3,
                               widthSecondContainer:
                                   double.parse(data[0][index].split('--')[1]),
                               title: data[0][index].split('--')[0],
@@ -142,47 +95,142 @@ class WhatIdo extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(70, 30, 70, 20),
-                    child: CustomText(
-                        text: data[1].isNotEmpty
-                            ? '⚡ Some languages & tools I use:'
-                            : '',
-                        fontSize: 35,
-                        color: Theme.of(context).primaryColorLight),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      top: 25.0,
-                      bottom: 20.0,
-                    ),
-                    child: Column(
-                      children: List.generate(
-                        data[1].length % 8 == 0
-                            ? data[1].length ~/ 8
-                            : data[1].length ~/ 8 + 1,
-                        (int i) => Padding(
-                          padding: const EdgeInsets.only(bottom: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: List.generate(
-                                (data[1].length - storage - 1) >= 8
-                                    ? 8
-                                    : data[1].length - storage - 1,
-                                (int index) {
-                              storage = index + i * 8;
-                              return Image.asset(
-                                'assets/what_i_do/${data[1][index + i * 8]}',
-                              );
-                            }),
-                          ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(15, 30, 15, 20),
+                  child: CustomText(
+                      text: data[1].isNotEmpty
+                          ? '⚡ Some languages & tools I use:'
+                          : '',
+                      fontSize: constraints.maxWidth < 1000 ? 20 : 35,
+                      color: Theme.of(context).primaryColorLight),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(15, 25, 15, 20),
+                  child: Column(
+                    children: List.generate(
+                      data[1].length % 4 == 0
+                          ? data[1].length ~/ 4
+                          : data[1].length ~/ 4 + 1,
+                      (int i) => Padding(
+                        padding: const EdgeInsets.only(bottom: 20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: List.generate(
+                              (data[1].length - storage - 1) >= 4
+                                  ? 4
+                                  : data[1].length - storage - 1, (int index) {
+                            storage = index + i * 4;
+                            return Image.asset(
+                              'assets/what_i_do/${data[1][index + i * 4]}',
+                              width: width * 0.14,
+                              height: height * 0.14,
+                            );
+                          }),
                         ),
                       ),
                     ),
                   ),
-                ],
-              );
-            }
+                ),
+              ],
+            );
+            // } else {
+            //   int storage = -1;
+            //   return Column(
+            //     crossAxisAlignment: CrossAxisAlignment.start,
+            //     children: [
+            //       Padding(
+            //         padding: const EdgeInsets.fromLTRB(70, 10, 70, 20),
+            //         child: CustomText(
+            //             text: '⚡ I have a good proficiency in:',
+            //             fontSize: 35,
+            //             color: Theme.of(context).primaryColorLight),
+            //       ),
+            //       Padding(
+            //         padding: const EdgeInsets.only(bottom: 25.0),
+            //         child: Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //           children: [
+            //             Column(
+            //               children: List.generate(
+            //                 data[0].length,
+            //                 (int index) => Progress(
+            //                   width: width / 1.3,
+            //                   widthSecondContainer:
+            //                       double.parse(data[0][index].split('--')[1]),
+            //                   title: data[0][index].split('--')[0],
+            //                   sizeProficiencyName: 22,
+            //                   sizePercentage: 15,
+            //                 ),
+            //               ),
+            //             ),
+            //             Image.asset(
+            //               currentTheme.currentTheme == ThemeMode.dark
+            //                   ? 'assets/what_i_do/constant/checklist.png'
+            //                   : 'assets/what_i_do/constant/checklist-light.png',
+            //             ),
+            //           ],
+            //         ),
+            //       ),
+            //       Padding(
+            //         padding: const EdgeInsets.fromLTRB(70, 30, 70, 20),
+            //         child: CustomText(
+            //             text: data[1].isNotEmpty
+            //                 ? '⚡ Some languages & tools I use:'
+            //                 : '',
+            //             fontSize: 35,
+            //             color: Theme.of(context).primaryColorLight),
+            //       ),
+            //       // Padding(
+            //       //   padding: const EdgeInsets.only(
+            //       //     top: 25.0,
+            //       //     // bottom: 20.0,
+            //       //   ),
+            //       //   child: Column(
+            //       //     children: List.generate(
+            //       //       data[1].length,
+            //       //       (int i) => Padding(
+            //       //         padding: const EdgeInsets.only(bottom: 10.0),
+            //       //         child: Row(
+            //       //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //       //           children: List.generate(
+            //       //             (data[1].length - storage - 1) >= 8
+            //       //                 ? 8
+            //       //                 : data[1].length - storage - 1,
+            //       //             (int index) {
+            //       //               storage = index + i * 8;
+            //       //               return Image.asset(
+            //       //                 'assets/what_i_do/${data[1][index + i * 8]}',
+            //       //                 width: width * 0.1,
+            //       //                 height: height * 0.1,
+            //       //               );
+            //       //             },
+            //       //           ),
+            //       //         ),
+            //       //       ),
+            //       //     ),
+            //       //   ),
+            //       // ),
+            //       SizedBox(
+            //         child: Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //           children: List.generate(
+            //             data[1].length - storage - 1,
+            //             (int index) {
+            //               //storage = index + i * 10;
+            //               return Expanded(
+            //                 child: Image.asset(
+            //                   'assets/what_i_do/${data[1][index]}',
+            //                   width: width * 0.1,
+            //                   height: height * 0.1,
+            //                 ),
+            //               );
+            //             },
+            //           ),
+            //         ),
+            //       )
+            //     ],
+            //   );
+            // }
           }),
         )
       ]),

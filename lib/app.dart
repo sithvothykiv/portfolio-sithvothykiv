@@ -35,7 +35,7 @@ class App extends StatelessWidget {
           return Scaffold(
             appBar: PreferredSize(
               preferredSize: Size(width, height * 0.07),
-              child: const NavBar(isDarkModeBtnVisible: true),
+              child: const NavBar(), //isDarkModeBtnVisible: true
             ),
             body: ScrollablePositionedList.builder(
               physics: const BouncingScrollPhysics(),

@@ -21,10 +21,11 @@ class TitleBar extends StatelessWidget {
       child: Text(
         title,
         style: TextStyle(
-            fontFamily: 'SourceCodePro',
-            // letterSpacing: 10.5,
-            color: Theme.of(context).primaryColorLight,
-            fontSize: 20),
+          fontFamily: 'SourceCodePro',
+          // letterSpacing: 10.5,
+          color: Theme.of(context).primaryColorLight,
+          fontSize: 35,
+        ),
       ),
     );
   }

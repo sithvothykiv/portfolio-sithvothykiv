@@ -1,36 +1,32 @@
 {
     "name_and_link": [
         "Sithvothy KIV.",
-        "https://github.com/danger-ahead/"
+        "https://github.com/sithvothykiv"
     ],
     "designation": [
         "MSIT Postgraduate.",
         "Flutter Developer."
     ],
-    "resume_download_link": "https://docs.google.com/document/d/15T64f6XCPKDaJX7CUFDIqly-H4PcudLTWDlKGxb9IvQ/edit?usp=sharing/export?format=pdf",
+    "resume_download_link": "",
     "social_media": {
         "1": [
-            "https://github.com/danger-ahead/",
+            "https://github.com/sithvothykiv",
             "github"
         ],
         "2": [
-            "https://leetcode.com/danger-ahead/",
-            "leetcode"
-        ],
-        "3": [
-            "https://linkedin.com/in/shourya-shikhar/",
+            "https://www.linkedin.com/in/sithvothy-kiv-587a77164/",
             "linkedin"
         ],
+        "3": [
+            "https://t.me/SithVothyKIV",
+            "telegram"
+        ],
         "4": [
-            "https://stackoverflow.com/users/10951873/shourya-shikhar",
-            "stackoverflow"
+            "https://www.instagram.com/k.sithvothy/",
+            "instagram"
         ],
         "5": [
-            "https://twitter.com/___shourya___/",
-            "twitter"
-        ],
-        "6": [
-            "mailto:danger.ahead@pm.me",
+            "mailto:kivsethvuthy12@gmail.com",
             "email"
         ]
     },
@@ -40,57 +36,107 @@
         "picture": "me.png"
     },
     "about": "A passionate Developer | Cloud Compute | DevOps | Data Scientist 🚀",
-    "bio": "MSIT student. I spend my leisure time contributing to open source projects and browsing Stack Overflow. I've hands-on experience in working on several projects that use Python, Node.js, Flutter, Java, etc. Most of my projects are released as open-source on GitHub.",
+    "bio": "MSIT Student. I have experience with Flutter, Git, AWS, Python, Swift and other frameworks. Great understanding of Mobile App Development. Experience in responsive Web Development and UX/UI Design.",
     "what_i_do": {
         "tools": [
             "flutter.png",
             "linux.png",
-            "c.png",
-            "cpp.png",
-            "java.png",
             "python.png",
             "bash.png",
-            "git.png"
+            "JavaScript-logo.png",
+            "Amazon_Web_Services_Logo.png",
+            "Swift_logo.png",
+            "Postgresql_elephant.png",
+            "java.png",
+            "figma-logo.png",
+            "c.png",
+            "cpp.png"
         ],
         "proficiency": [
-            "Flutter--50",
-            "C/C++/Java/Python--60",
-            "GNU/Linux--30",
-            "Git--65"
+            "Dart/Flutter--80",
+            "JS/NodeJs/Swift/Python--50",
+            "GNU/Bash/Linux--60",
+            "Java/C/C++--50",
+            "Git/Jira/Docker/DevOps/AWS--60",
+            "UX/UI/Figma/AdobeXD--70",
+            "Database/PostgreSQL/SQLite/Realm--50",
+            "Project Management--60",
+            "Agile/Business Development--60",
+            "Communication Skills--60"
         ]
     },
     "education": {
         "1": {
-            "institute": "RCC Institute of Information Technology",
-            "location": "Kolkata",
-            "years": "2020 - 2024",
-            "description": "B.Tech in CSE",
-            "grades": "9.53 YGPA",
-            "logo": "rcciit.png"
+            "institute": "University of Puthisastra",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2022 - Present",
+            "description": "Master Degree, Data Science.",
+            "grades": "N/A",
+            "logo": "puthisastra-logo.png"
         },
         "2": {
-            "institute": "Gitaram Academy",
-            "location": "Berhampore",
-            "years": "2018 - 2020",
-            "description": "Physics, Chemistry, Mathematics, Computer Science",
-            "grades": "84%",
-            "logo": "gitaram.png"
+            "institute": "Royal University of Phnom Penh",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2016 - 2020",
+            "description": "Bachelor Degree, Computer Science",
+            "grades": "GPA 3.0",
+            "logo": "rupp-logo.png"
         },
         "3": {
-            "institute": "The St. Xavier's School",
-            "location": "Malda",
-            "years": "2004 - 2018",
-            "description": "Secondary Education",
-            "grades": "94%",
-            "logo": "stxaviers.png"
+            "institute": "Samdach Ouv High School", 
+            "location": "Banteay Meanchey, Cambodia",
+            "years": "2011 - 2016",
+            "description": "High School",
+            "grades": "Completed BacII (2016)",
+            "logo": "MoEYS_(Cambodia).png"
         },
         "4": {
-            "institute": "The St. Xavier's School",
-            "location": "Malda",
-            "years": "2004 - 2018",
-            "description": "Secondary Education",
-            "grades": "94%",
-            "logo": "stxaviers.png"
+            "institute": "Information Technologies Professional Clubs",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2017 - 2017",
+            "description": "Flutter/Dart Short Course Training. ",
+            "grades": "Completed",
+            "logo": "ITPC.png"
+        },
+        "5": {
+            "institute": "ANT Technology Training Center",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2018 - 2018",
+            "description": "C/C++ Short Course Training. ",
+            "grades": "Completed",
+            "logo": "atn-training-center.png"
+        },
+        "6": {
+            "institute": "ANT Technology Training Center",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2018 - 2018",
+            "description": "Java Short Course Training. ",
+            "grades": "Completed",
+            "logo": "atn-training-center.png" 
+        },
+        "7": {
+            "institute": "Udemy, iOS Development",
+            "location": "E-Learning/Online Course",
+            "years": "2022 - 2022",
+            "description": "The Complete iOS App Development Course, iOS, Swift.",
+            "grades": "Completed",
+            "logo": "Udemy_logo.png"
+        },
+        "8": {
+            "institute": "Udemy, NodeJS",
+            "location": "E-Learning/Online Course",
+            "years": "2022 - 2022",
+            "description": "Node, SQL, & PostgreSQL - Mastering Backend Web Development",
+            "grades": "Completed",
+            "logo": "Udemy_logo.png"
+        },
+        "9": {
+            "institute": "AWS Academy Cloud Foundations",
+            "location": "Amazon Web Services Training and Certification            ",
+            "years": "September, 2022 - January, 2023",
+            "description": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+            "grades": "Completed",
+            "logo": "Amazon_Web_Services_Logo.png"
         }
     },
     "experience": {

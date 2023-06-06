@@ -58,17 +58,17 @@ class _HomePageState extends State<HomePage> {
                   SocialMediaBar(
                     height: height,
                   ),
-                  About(fontSize: 24),
-                  Padding(
-                    padding: EdgeInsets.only(bottom: height * 0.029),
-                    child: OverflowBar(
-                      children: [
-                        Resume(
-                          width: 0,
-                        ),
-                      ],
-                    ),
-                  ),
+                  // About(fontSize: 24),
+                  // Padding(
+                  //   padding: EdgeInsets.only(bottom: height * 0.029),
+                  //   child: OverflowBar(
+                  //     children: [
+                  //       Resume(
+                  //         width: 0,
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
                 ],
               ),
             );
@@ -93,20 +93,18 @@ class _HomePageState extends State<HomePage> {
                               context: context,
                             )),
                         Designation(isMobile: false, context: context),
-                        SocialMediaBar(
-                          height: height,
-                        ),
-                        About(fontSize: 30),
-                        Padding(
-                          padding: EdgeInsets.only(bottom: height * 0.026),
-                          child: Row(
-                            children: [
-                              Resume(
-                                width: width,
-                              ),
-                            ],
-                          ),
-                        ),
+                        SocialMediaBar(height: height),
+                        // About(fontSize: 30),
+                        // Padding(
+                        //   padding: EdgeInsets.only(bottom: height * 0.026),
+                        //   child: Row(
+                        //     children: [
+                        //       Resume(
+                        //         width: width,
+                        //       ),
+                        //     ],
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),
