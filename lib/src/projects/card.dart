@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dev_folio/src/home/social_media_bar.dart';
 
 import '../custom/custom_text.dart';
 import '../html_open_link.dart';
-import '../theme/config.dart';
 import 'data.dart';
 
 class ProjectsCard extends StatefulWidget {

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../custom/custom_text.dart';
-import '../theme/config.dart';
 
 class EducationDesktop extends StatefulWidget {
   const EducationDesktop({Key? key, required this.instiution, required this.location, required this.desc, required this.grades, required this.years, required this.image}) : super(key: key);

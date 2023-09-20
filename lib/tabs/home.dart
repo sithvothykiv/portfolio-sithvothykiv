@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../src/home/about.dart';
 import '../src/home/data.dart';
 import '../src/home/designation.dart';
 import '../src/home/introduction.dart';
 import '../src/home/my_name.dart';
-import '../src/home/resume.dart';
 import '../src/home/social_media_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,8 +19,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Future.microtask(() {
-        SystemChrome.setApplicationSwitcherDescription(
-            ApplicationSwitcherDescription(
+        SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
           label: 'Meet ${name().split(' ').first}',
           primaryColor: Colors.black.value,
         ));
@@ -37,8 +34,7 @@ class _HomePageState extends State<HomePage> {
     return Padding(
       padding: EdgeInsets.only(bottom: height * 0.1),
       child: SizedBox(
-        child: LayoutBuilder(
-            builder: (BuildContext context, BoxConstraints constraints) {
+        child: LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
           if (constraints.maxWidth < 1000) {
             return Padding(
               padding: EdgeInsets.symmetric(horizontal: width * 0.024),
@@ -47,8 +43,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(top: height * 0.07),
-                    child: const Introduction(
-                        word: 'Hello,\nI am', textScaleFactor: 3),
+                    child: const Introduction(word: 'Hello,\nI am', textScaleFactor: 3),
                   ),
                   MyName(
                     isMobile: true,
@@ -74,8 +69,7 @@ class _HomePageState extends State<HomePage> {
             );
           } else {
             return Padding(
-              padding:
-                  EdgeInsets.only(top: height * 0.08, bottom: height * 0.07),
+              padding: EdgeInsets.only(top: height * 0.08, bottom: height * 0.07),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -84,8 +78,7 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Introduction(
-                            word: 'Hello, I am', textScaleFactor: 3.5),
+                        const Introduction(word: 'Hello, I am', textScaleFactor: 3.5),
                         FittedBox(
                             fit: BoxFit.cover,
                             child: MyName(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../custom/custom_text.dart';
 import '../html_open_link.dart';
-import '../theme/config.dart';
 
 class AchievementsCard extends StatefulWidget {
   const AchievementsCard({

@@ -6,7 +6,6 @@ import '../src/custom/custom_text.dart';
 import '../src/home/social_media_bar.dart';
 import '../src/html_open_link.dart';
 import '../src/theme/config.dart';
-import '../src/theme/custom_theme.dart';
 
 class ContactMe extends StatefulWidget {
   const ContactMe({Key? key}) : super(key: key);
@@ -28,9 +27,7 @@ class _ContactMeState extends State<ContactMe> {
     Widget imageWidget(double radius) {
       return AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: EdgeInsets.only(
-            top: isHover ? height * 0.005 : height * 0.01,
-            bottom: !isHover ? height * 0.005 : height * 0.01),
+        padding: EdgeInsets.only(top: isHover ? height * 0.005 : height * 0.01, bottom: !isHover ? height * 0.005 : height * 0.01),
         child: InkWell(
           onTap: () {},
           onHover: (bool value) {
@@ -53,17 +50,13 @@ class _ContactMeState extends State<ContactMe> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        LayoutBuilder(
-            builder: (BuildContext context, BoxConstraints constraints) {
+        LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
           if (constraints.maxWidth < 1000) {
             return Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: Column(
                 children: [
-                  CustomText(
-                      text: 'Reach Out to me!',
-                      fontSize: 28,
-                      color: Theme.of(context).primaryColorLight),
+                  CustomText(text: 'Reach Out to me!', fontSize: 28, color: Theme.of(context).primaryColorLight),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 5.0),
                     child: imageWidget(140),
@@ -71,11 +64,9 @@ class _ContactMeState extends State<ContactMe> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 5.0),
                     child: CustomText(
-                      text:
-                          'DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
+                      text: 'DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
                       fontSize: 18,
-                      color:
-                          Theme.of(context).primaryColorLight.withOpacity(0.7),
+                      color: Theme.of(context).primaryColorLight.withOpacity(0.7),
                     ),
                   ),
                   MyBio(fontSize: 15),
@@ -88,17 +79,10 @@ class _ContactMeState extends State<ContactMe> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         if (data[0] != '')
-                          Image.asset(
-                              currentTheme.currentTheme == ThemeMode.dark
-                                  ? 'assets/contact_me/constant/location-dark.png'
-                                  : 'assets/contact_me/constant/location.png',
-                              scale: 4)
+                          Image.asset(currentTheme.currentTheme == ThemeMode.dark ? 'assets/contact_me/constant/location-dark.png' : 'assets/contact_me/constant/location.png', scale: 4)
                         else
                           const Center(),
-                        CustomText(
-                            text: ' ${data[0]}',
-                            fontSize: 18,
-                            color: Theme.of(context).primaryColorLight),
+                        CustomText(text: ' ${data[0]}', fontSize: 18, color: Theme.of(context).primaryColorLight),
                       ],
                     ),
                   ),
@@ -107,12 +91,7 @@ class _ContactMeState extends State<ContactMe> {
                       bottom: 10.0,
                       top: 5.0,
                     ),
-                    child: data[1] != ''
-                        ? CustomText(
-                            text: 'Open for opportunities: ${data[1]}',
-                            fontSize: 18,
-                            color: Theme.of(context).primaryColorLight)
-                        : const Center(),
+                    child: data[1] != '' ? CustomText(text: 'Open for opportunities: ${data[1]}', fontSize: 18, color: Theme.of(context).primaryColorLight) : const Center(),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 10.0),
@@ -136,19 +115,10 @@ class _ContactMeState extends State<ContactMe> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          CustomText(
-                              text: 'Reach Out to me!',
-                              fontSize: 35,
-                              color: Theme.of(context).primaryColorLight),
+                          CustomText(text: 'Reach Out to me!', fontSize: 35, color: Theme.of(context).primaryColorLight),
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 8.0),
-                            child: CustomText(
-                                text:
-                                    'DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
-                                fontSize: 18,
-                                color: Theme.of(context)
-                                    .primaryColorLight
-                                    .withOpacity(0.7)),
+                            child: CustomText(text: 'DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.', fontSize: 18, color: Theme.of(context).primaryColorLight.withOpacity(0.7)),
                           ),
                           MyBio(fontSize: 15),
                           Padding(
@@ -156,28 +126,14 @@ class _ContactMeState extends State<ContactMe> {
                             child: Row(
                               children: [
                                 if (data[0] != '')
-                                  Image.asset(
-                                      currentTheme.currentTheme ==
-                                              ThemeMode.dark
-                                          ? 'assets/contact_me/constant/location-dark.png'
-                                          : 'assets/contact_me/constant/location.png',
-                                      scale: 4)
+                                  Image.asset(currentTheme.currentTheme == ThemeMode.dark ? 'assets/contact_me/constant/location-dark.png' : 'assets/contact_me/constant/location.png', scale: 4)
                                 else
                                   const Center(),
-                                CustomText(
-                                    text: ' ${data[0]}',
-                                    fontSize: 18,
-                                    color: Theme.of(context).primaryColorLight),
+                                CustomText(text: ' ${data[0]}', fontSize: 18, color: Theme.of(context).primaryColorLight),
                               ],
                             ),
                           ),
-                          if (data[1] != '')
-                            CustomText(
-                                text: 'Open for opportunities: ${data[1]}',
-                                fontSize: 18,
-                                color: Theme.of(context).primaryColorLight)
-                          else
-                            const Center(),
+                          if (data[1] != '') CustomText(text: 'Open for opportunities: ${data[1]}', fontSize: 18, color: Theme.of(context).primaryColorLight) else const Center(),
                         ],
                       ),
                     ),
@@ -202,18 +158,11 @@ class _ContactMeState extends State<ContactMe> {
             children: [
               TextButton(
                 onPressed: () => htmlOpenLink(getNameAndLink[1]),
-                child: CustomText(
-                    text: 'Made with ❤️ by ${getNameAndLink[0]}',
-                    fontSize: 10,
-                    color: Theme.of(context).primaryColorLight),
+                child: CustomText(text: 'Made with ❤️ by ${getNameAndLink[0]}', fontSize: 10, color: Theme.of(context).primaryColorLight),
               ),
               TextButton(
-                onPressed: () => htmlOpenLink(
-                    'https://github.com/danger-ahead/flutter_dev_folio'),
-                child: CustomText(
-                    text: 'Theme by flutter_dev_folio',
-                    fontSize: 10,
-                    color: Theme.of(context).primaryColorLight),
+                onPressed: () => htmlOpenLink('https://github.com/danger-ahead/flutter_dev_folio'),
+                child: CustomText(text: 'Theme by flutter_dev_folio', fontSize: 10, color: Theme.of(context).primaryColorLight),
               )
             ],
           ),

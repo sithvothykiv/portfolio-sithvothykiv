@@ -18,8 +18,6 @@ class Projects extends StatelessWidget {
       Padding(
         padding: EdgeInsets.only(bottom: height * 0.1),
         child: LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
-          print('maxWidth: ${constraints.maxWidth}');
-
           if (constraints.maxWidth < 1000) {
             return Column(
               children: List.generate(data.length, (int i) {

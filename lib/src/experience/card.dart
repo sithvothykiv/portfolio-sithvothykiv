@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../custom/custom_text.dart';
-import '../theme/config.dart';
 
 class ExperienceCard extends StatefulWidget {
   const ExperienceCard(
