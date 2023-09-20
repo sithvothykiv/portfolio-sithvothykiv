@@ -1,0 +1,276 @@
+{
+    "name_and_link": [
+        "Sithvothy KIV.",
+        "https://github.com/sithvothykiv"
+    ],
+    "designation": [
+        "MSIT Postgraduate.",
+        "Flutter Developer."
+    ],
+    "resume_download_link": "",
+    "social_media": {
+        "1": [
+            "https://github.com/sithvothykiv",
+            "github"
+        ],
+        "2": [
+            "https://www.linkedin.com/in/sithvothy-kiv-587a77164/",
+            "linkedin"
+        ],
+        "3": [
+            "https://t.me/SithVothyKIV",
+            "telegram"
+        ],
+        "4": [
+            "https://www.instagram.com/k.sithvothy/",
+            "instagram"
+        ],
+        "5": [
+            "mailto:kivsethvuthy12@gmail.com",
+            "email"
+        ]
+    },
+    "contact_me": {
+        "location": "Phnom Penh, Cambodia",
+        "open_for_opportunities": "Yes",
+        "picture": "me.png"
+    },
+    "about": "A passionate Developer | Cloud Compute | DevOps | Data Scientist 🚀",
+    "bio": "MSIT Student. I have experience with Flutter, Git, AWS, Python, Swift and other frameworks. Great understanding of Mobile App Development. Experience in responsive Web Development and UX/UI Design.",
+    "what_i_do": {
+        "tools": [
+            "flutter.png",
+            "linux.png",
+            "python.png",
+            "bash.png",
+            "JavaScript-logo.png",
+            "Amazon_Web_Services_Logo.png",
+            "Swift_logo.png",
+            "Postgresql_elephant.png",
+            "java.png",
+            "figma-logo.png",
+            "c.png",
+            "cpp.png"
+        ],
+        "proficiency": [
+            "Dart/Flutter--80",
+            "Swift/Python--50",
+            "GNU/Bash/Linux--60",
+            "Java/C/C++--50",
+            "Git/Jira/Docker/DevOps/AWS--60",
+            "UX/UI/Figma--70",
+            "Database/SQLite/Realm--50",
+            "Project Management--60",
+            "Agile/Business Development--60",
+            "Communication Skills--60"
+        ]
+    },
+    "education": {
+        "1": {
+            "institute": "University of Puthisastra",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2022 - Present",
+            "description": "Master Degree, Data Science.",
+            "grades": "N/A",
+            "logo": "puthisastra-logo.png"
+        },
+        "2": {
+            "institute": "Royal University of Phnom Penh",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2016 - 2020",
+            "description": "Bachelor Degree, Computer Science",
+            "grades": "GPA 3.0",
+            "logo": "rupp-logo.png"
+        },
+        "3": {
+            "institute": "Samdach Ouv High School", 
+            "location": "Banteay Meanchey, Cambodia",
+            "years": "2011 - 2016",
+            "description": "High School",
+            "grades": "Completed BacII (2016)",
+            "logo": "MoEYS_(Cambodia).png"
+        },
+        "4": {
+            "institute": "Information Technologies Professional Clubs",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2017 - 2017",
+            "description": "Flutter/Dart Short Course Training. ",
+            "grades": "Completed",
+            "logo": "ITPC.png"
+        },
+        "5": {
+            "institute": "ANT Technology Training Center",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2018 - 2018",
+            "description": "C/C++ Short Course Training. ",
+            "grades": "Completed",
+            "logo": "atn-training-center.png"
+        },
+        "6": {
+            "institute": "ANT Technology Training Center",
+            "location": "Phnom Penh, Cambodia",
+            "years": "2018 - 2018",
+            "description": "Java Short Course Training. ",
+            "grades": "Completed",
+            "logo": "atn-training-center.png" 
+        },
+        "7": {
+            "institute": "Udemy, iOS Development",
+            "location": "E-Learning/Online Course",
+            "years": "2022 - 2022",
+            "description": "The Complete iOS App Development Course, iOS, Swift.",
+            "grades": "Completed",
+            "logo": "Udemy_logo.png"
+        },
+        "8": {
+            "institute": "Udemy, NodeJS",
+            "location": "E-Learning/Online Course",
+            "years": "2022 - 2022",
+            "description": "Node, SQL, & PostgreSQL - Mastering Backend Web Development",
+            "grades": "Completed",
+            "logo": "Udemy_logo.png"
+        },
+        "9": {
+            "institute": "AWS Academy Cloud Foundations",
+            "location": "Amazon Web Services Training and Certification            ",
+            "years": "September, 2022 - January, 2023",
+            "description": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+            "grades": "Completed",
+            "logo": "Amazon_Web_Services_Logo.png"
+        }
+    },
+    "experience": {
+        "1": {
+            "name": "My Github",
+            "role": "Owner",
+            "period": "December, 2022 - Present",
+            "description": "Develop useful tools, Pratice DevOps using Aws Cloud Compute, Create sample code projects (NodeJs, Flutter, Python, Swfit).",
+            "image_name": "github-logo.png"
+        },
+        "2": {
+            "name": "Infinity Information & Apps Dev Co., Ltd.",
+            "role": "Mobile App Developer (Flutter)",
+            "period": "May, 2021 - Present",
+            "description": "Working as a Mobile App Developer using Flutter to build, create, test, and develop applications on mobile devices.",
+            "image_name": "infinity-03.png"
+        },
+        "3": {
+            "name": "Agribee Cambodia PLC.",
+            "role": "Mobile App Developer (Flutter)",
+            "period": "January, 2020 - April, 2021",
+            "description": "Worked on the Flutter App Dev Team and created BeeApp to help with internal operations.",
+            "image_name": "agriBee.logo.png"
+        },
+        "4": {
+            "name": "CloudNET Cambodia.",
+            "role": "Mobile App Developer Intern (Flutter)",
+            "period": "July, 2019 - January, 2020",
+            "description": "Developing new features and user interfaces from wireframe models and fixing bugs, problems. Writing clean, readable, and testable code.",
+            "image_name": "cloudnet-logo.png"
+        },
+        "5": {
+            "name": "Royal University of Phnom Penh.",
+            "role": "Computer Lab Assistant",
+            "period": "October, 2018 - July, 2019            ",
+            "description": "Maintains a clean, safe, and orderly computer laboratory environment.",
+            "image_name": "rupp-logo.png"
+        }
+       
+    },
+    "projects": {
+        "1": {
+            "name": "Flutter Custom Gallery Picker",
+            "tech_stack_used": "Flutter",
+            "description": "A flutter package which is clone of facebook messenger or instagram gallery picker.",
+            "general_or_github_link": "https://github.com/sithvothykiv/custom_gallery_picker"
+        },
+        "2": {
+            "name": "Flutter Custom Dropdown",
+            "tech_stack_used": "Flutter",
+            "description": "Custom Dropdown package lets you add customizable animated dropdown widget.",
+            "general_or_github_link": "https://github.com/sithvothykiv/flutter_custom_dropdown"
+        },
+        "3": {
+            "name": "Flutter Riverpod Todo App",
+            "tech_stack_used": "Flutter",
+            "description": "Simple Todo app built using Flutter and Riverpod, demonstrating how to perform CRUD operations in a clean and maintainable way.",
+            "general_or_github_link": "https://github.com/sithvothykiv/flutter_riverpod_todo#flutter-riverpod-todo-app"
+        },
+        "4": {
+            "name": "Developer Portfolio ⚡️",
+            "tech_stack_used": "Flutter",
+            "description": "It's minimal, beautiful and responsive",
+            "general_or_github_link": "https://github.com/sithvothykiv/flutter-portfolio-web-app"
+        },
+        "5": {
+            "name": "Pokemon App",
+            "tech_stack_used": "Flutter",
+            "description": "An App built with Flutter (with lots of animations) using Clean Architecture.",
+            "general_or_github_link": "https://github.com/sithvothykiv/FlutterPokemon_App"
+        },
+        "6": {
+            "name": "MerlAnime",
+            "tech_stack_used": "Flutter",
+            "description": "A anime streaming app made using flutter.",
+            "general_or_github_link": "https://github.com/sithvothykiv/MerlAnime-App"
+        },
+        "7": {
+            "name": "Africa App",
+            "tech_stack_used": "iOS, SwiftUI",
+            "description": "Simple, Learning SwiftUI and build practice example App.",
+            "general_or_github_link": "https://github.com/sithvothykiv/Africa-iOS-App"
+        },
+        "8":{
+            "name": "Fructus App",
+            "tech_stack_used": "iOS, SwiftUI",
+            "description": "Simple, Learning SwiftUI and build practice example App.",
+            "general_or_github_link": "https://github.com/sithvothykiv/fructus-app"
+        },
+        "9":{
+            "name": "Python Example",
+            "tech_stack_used": "Python",
+            "description": "Example Python code",
+            "general_or_github_link": "https://github.com/UP-MSIT/python-course-code"
+        },
+        "10":{
+            "name": "DevOps, Deploy Static Website",
+            "tech_stack_used": "AWS, Python, Bash, CloudFormation, S3",
+            "description": "Deploy Static website to AWS, CloudFront, Route53 using CloudFormation template. Python using for upload files to S3",
+            "general_or_github_link": "https://github.com/UP-MSIT/StaticWebsite-S3-CloudFormation"
+        },
+        "11":{
+            "name": "DevOps, Microservices",
+            "tech_stack_used": "AWS, Python, Bash, Docker",
+            "description": "Deploy Microservices using Docker-swarm and HAProxy",
+            "general_or_github_link": "https://github.com/UP-MSIT/DevOps-microservices-app"
+        },
+        "12":{
+            "name": "DevOps, Deploy Nexus Registry",
+            "tech_stack_used": "AWS, Bash, Docker, Nexus Registry",
+            "description": "Deploy Nexus Registry configuration HTTPS and SSL Certificate",
+            "general_or_github_link": "https://github.com/UP-MSIT/Nexus-Config-HTTPS-SSL"
+        },
+        "13":{
+            "name": "DevOps, Vagrant",
+            "tech_stack_used": "MYSQL, MEMCACHE, RABBITMQ, TOMCAT, Vagrant",
+            "description": "Build and Deploy Microservices configuration using Vagrant",
+            "general_or_github_link": "https://github.com/UP-MSIT/deploy-sample-webapp-vagrant"
+        },
+        "14":{
+            "name": "DevOps, Final Project Deployment",
+            "tech_stack_used": "Jenkins, Docker, Nexus Registry, AWS/EC2, Wildfly",
+            "description": "Build and Deploy Microservices configuration for Final School Project",
+            "general_or_github_link": "https://github.com/UP-MSIT/Final-Project-Swarm-Deployment"
+        }
+    },
+    "achievements": {
+        "1": {
+            "description": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+            "link": "https://www.credly.com/badges/83c275cb-050c-49c7-ad7e-ed9ffce8a4ab/linked_in_profile"
+        },
+        "2": {
+            "description": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+            "link": "https://www.credly.com/badges/83c275cb-050c-49c7-ad7e-ed9ffce8a4ab/linked_in_profile"
+        }
+    }
+}
