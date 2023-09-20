@@ -30,12 +30,12 @@ class SocialMediaBar extends StatelessWidget {
               return IconButton(
                   iconSize: 50.0,
                   hoverColor: Colors.transparent,
-                  icon: (data[i][1] != '' &&
-                          currentSupportedSocialMedia.contains(data[i][1]))
+                  icon: (data[i][1] != '' && currentSupportedSocialMedia.contains(data[i][1]))
                       ? SocialMediaButton(
                           image: 'assets/home/constant/${data[i][1]}.png',
                           link: data[i][0],
-                          height: height)
+                          height: height,
+                        )
                       : SocialMediaButton(
                           image: 'assets/home/constant/link.png',
                           link: data[i][0],
@@ -51,9 +51,13 @@ class SocialMediaBar extends StatelessWidget {
 }
 
 class SocialMediaButton extends StatefulWidget {
-  const SocialMediaButton(
-      {Key? key, required this.image, required this.height, required this.link})
-      : super(key: key);
+  const SocialMediaButton({
+    Key? key,
+    required this.image,
+    required this.height,
+    required this.link,
+  }) : super(key: key);
+
   @override
   _SocialMediaButton createState() => _SocialMediaButton();
 
@@ -69,8 +73,9 @@ class _SocialMediaButton extends State<SocialMediaButton> {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       padding: EdgeInsets.only(
-          top: isHover ? widget.height * 0.005 : widget.height * 0.01,
-          bottom: !isHover ? widget.height * 0.005 : widget.height * 0.01),
+        top: isHover ? widget.height * 0.005 : widget.height * 0.01,
+        bottom: !isHover ? widget.height * 0.005 : widget.height * 0.01,
+      ),
       child: InkWell(
         hoverColor: Colors.transparent,
         splashColor: Colors.transparent,

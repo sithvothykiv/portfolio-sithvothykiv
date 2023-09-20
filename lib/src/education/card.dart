@@ -4,17 +4,10 @@ import '../custom/custom_text.dart';
 import '../theme/config.dart';
 
 class EducationDesktop extends StatefulWidget {
-  const EducationDesktop(
-      {Key? key,
-      required this.instiution,
-      required this.location,
-      required this.desc,
-      required this.grades,
-      required this.years,
-      required this.image})
-      : super(key: key);
+  const EducationDesktop({Key? key, required this.instiution, required this.location, required this.desc, required this.grades, required this.years, required this.image}) : super(key: key);
 
   final String instiution, location, years, grades, desc, image;
+
   @override
   _EducationDesktopState createState() => _EducationDesktopState();
 }
@@ -28,9 +21,7 @@ class _EducationDesktopState extends State<EducationDesktop> {
     final double width = MediaQuery.of(context).size.width;
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
-      padding: EdgeInsets.only(
-          top: isHover ? height * 0.005 : height * 0.01,
-          bottom: !isHover ? height * 0.005 : height * 0.01),
+      padding: EdgeInsets.only(top: isHover ? height * 0.005 : height * 0.01, bottom: !isHover ? height * 0.005 : height * 0.01),
       child: InkWell(
         borderRadius: BorderRadius.circular(15),
         onHover: (bool value) {
@@ -41,17 +32,9 @@ class _EducationDesktopState extends State<EducationDesktop> {
         onTap: () {},
         child: Container(
           alignment: Alignment.topCenter,
-          padding: EdgeInsets.only(
-            top: height * 0.04,
-            left: width * 0.015,
-            right: width * 0.015,
-            bottom: height * 0.04,
-          ),
+          padding: EdgeInsets.only(top: height * 0.04, left: width * 0.015, right: width * 0.015, bottom: height * 0.04),
           width: width / 1.15,
-          decoration: BoxDecoration(
-            color: Theme.of(context).cardColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
+          decoration: BoxDecoration(color: Theme.of(context).cardColor, borderRadius: BorderRadius.circular(15.0)),
           child: Column(
             children: [
               // Visibility(
@@ -110,9 +93,7 @@ class _EducationDesktopState extends State<EducationDesktop> {
                           child: Padding(
                             padding: const EdgeInsets.only(bottom: 11.0),
                             child: CustomText(
-                              text: widget.years != ''
-                                  ? 'Years of study: ${widget.years}'
-                                  : '',
+                              text: widget.years != '' ? 'Years of study: ${widget.years}' : '',
                               fontSize: 12,
                               color: Theme.of(context).primaryColor,
                             ),
@@ -129,9 +110,7 @@ class _EducationDesktopState extends State<EducationDesktop> {
                         FittedBox(
                           fit: BoxFit.cover,
                           child: CustomText(
-                            text: widget.grades != ''
-                                ? 'Grades Achieved: ${widget.grades}'
-                                : '',
+                            text: widget.grades != '' ? 'Grades Achieved: ${widget.grades}' : '',
                             fontSize: 12,
                             color: Theme.of(context).primaryColor,
                           ),

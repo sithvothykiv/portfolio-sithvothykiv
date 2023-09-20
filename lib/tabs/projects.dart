@@ -17,8 +17,9 @@ class Projects extends StatelessWidget {
       TitleBar(height: height, width: width, title: 'PROJECTS'),
       Padding(
         padding: EdgeInsets.only(bottom: height * 0.1),
-        child: LayoutBuilder(
-            builder: (BuildContext context, BoxConstraints constraints) {
+        child: LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
+          print('maxWidth: ${constraints.maxWidth}');
+
           if (constraints.maxWidth < 1000) {
             return Column(
               children: List.generate(data.length, (int i) {
@@ -40,13 +41,10 @@ class Projects extends StatelessWidget {
               children: List.generate(
                 data.length % 3 == 0 ? data.length ~/ 3 : data.length ~/ 3 + 1,
                 (int i) => Padding(
-                  padding: EdgeInsets.only(bottom: width * 0.03),
+                  padding: EdgeInsets.symmetric(vertical: width * 0.01),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: List.generate(
-                        (data.length - storage - 1) >= 3
-                            ? 3
-                            : data.length - storage - 1, (int index) {
+                    children: List.generate((data.length - storage - 1) >= 3 ? 3 : data.length - storage - 1, (int index) {
                       storage = index + i * 3;
                       return ProjectsCard(
                         title: data[index + i * 3][0],
