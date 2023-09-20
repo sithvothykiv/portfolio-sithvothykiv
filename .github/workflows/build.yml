@@ -50,7 +50,7 @@ jobs:
       - name: Clone the repoitory
         uses: actions/checkout@v2
         with:
-          ref: master-deploy
+          ref: main
 
       - name: Configure git
         run: |
@@ -68,5 +68,5 @@ jobs:
           if [ $(git status --porcelain=v1 2>/dev/null | wc -l) != "0" ] ; then
             git add -f .
             git commit -m "gh-actions deployed a new build"
-            git push --force https://github.com/${GITHUB_REPOSITORY}.git HEAD:master-deploy
+            git push --force https://github.com/${GITHUB_REPOSITORY}.git HEAD:main
           fi
