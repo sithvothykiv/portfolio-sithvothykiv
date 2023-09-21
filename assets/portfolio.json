@@ -36,28 +36,23 @@
         "picture": "me.png"
     },
     "about": "A passionate Developer | Cloud Compute | DevOps | Data Scientist 🚀",
-    "bio": "MSIT Student. I have experience with Flutter, Git, AWS, Python, Swift and other frameworks. Great understanding of Mobile App Development. Experience in responsive Web Development and UX/UI Design.",
+    "bio": "MSIT Student. I have experience with Flutter, AWS Cloud, Python, Swift and other frameworks. Great understanding of Mobile App Development. Experience in responsive Web Development and UX/UI Design.",
     "what_i_do": {
         "tools": [
             "flutter.png",
-            "linux.png",
             "python.png",
-            "bash.png",
             "JavaScript-logo.png",
             "Amazon_Web_Services_Logo.png",
             "Swift_logo.png",
-            "Postgresql_elephant.png",
-            "java.png",
             "figma-logo.png",
-            "c.png",
-            "cpp.png"
+            "bash.png",
+            "java.png"
         ],
         "proficiency": [
             "Dart/Flutter--80",
-            "Swift/Python--50",
+            "Java/Swift/Python--50",
             "GNU/Bash/Linux--60",
-            "Java/C/C++--50",
-            "Git/Jira/Docker/DevOps/AWS--60",
+            "Git/Jira/Docker/DevOps/Cloud/AWS--60",
             "UX/UI/Figma--70",
             "Database/SQLite/Realm--50",
             "Project Management--60",
@@ -246,7 +241,7 @@
         },
         "12":{
             "name": "DevOps, Deploy Nexus Registry",
-            "tech_stack_used": "AWS, Bash, Docker, Nexus Registry",
+            "tech_stack_used": "AWS, Bash, Docker, Nexus ",
             "description": "Deploy Nexus Registry configuration HTTPS and SSL Certificate",
             "general_or_github_link": "https://github.com/UP-MSIT/Nexus-Config-HTTPS-SSL"
         },
@@ -258,17 +253,13 @@
         },
         "14":{
             "name": "DevOps, Final Project Deployment",
-            "tech_stack_used": "Jenkins, Docker, Nexus Registry, AWS/EC2, Wildfly",
+            "tech_stack_used": "Jenkins, Docker, Nexus, AWS/EC2, Wildfly",
             "description": "Build and Deploy Microservices configuration for Final School Project",
             "general_or_github_link": "https://github.com/UP-MSIT/Final-Project-Swarm-Deployment"
         }
     },
     "achievements": {
         "1": {
-            "description": "AWS Academy Graduate - AWS Academy Cloud Foundations",
-            "link": "https://www.credly.com/badges/83c275cb-050c-49c7-ad7e-ed9ffce8a4ab/linked_in_profile"
-        },
-        "2": {
             "description": "AWS Academy Graduate - AWS Academy Cloud Foundations",
             "link": "https://www.credly.com/badges/83c275cb-050c-49c7-ad7e-ed9ffce8a4ab/linked_in_profile"
         }
