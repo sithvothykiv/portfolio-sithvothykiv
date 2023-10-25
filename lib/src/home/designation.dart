@@ -67,15 +67,17 @@ class _TextSwapControllerState extends State<TextSwapController> {
   }
 
   int i = 0;
+
   @override
   Widget build(BuildContext context) {
     if (widget.data.length == i) i = 0;
     return CustomText(
-        text: widget.isMobile
-            ? widget.data[i++].replaceAll(' ', '\n')
-            : widget.data[i++],
-        isTextAlignCenter: false,
-        fontSize: widget.isMobile ? 40 : 60,
-        color: Theme.of(context).primaryColorLight);
+      text: widget.isMobile
+          ? widget.data[i++].replaceAll(' ', '\n')
+          : widget.data[i++],
+      isTextAlignCenter: false,
+      fontSize: widget.isMobile ? 40 : 60,
+      color: Theme.of(context).primaryColorLight,
+    );
   }
 }

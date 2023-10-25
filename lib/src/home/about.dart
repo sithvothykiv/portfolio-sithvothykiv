@@ -21,10 +21,11 @@ class About extends StatelessWidget {
             child: Text(
               gotAbout,
               style: TextStyle(
-                  fontFamily: 'SourceCodePro',
-                  // letterSpacing: 2.5,
-                  color: Theme.of(context).primaryColorLight,
-                  fontSize: fontSize),
+                fontFamily: 'SourceCodePro',
+                // letterSpacing: 2.5,
+                color: Theme.of(context).primaryColor,
+                fontSize: fontSize,
+              ),
             ),
           ),
         ],

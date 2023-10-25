@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_dev_folio/src/home/about.dart';
+import 'package:flutter_dev_folio/src/home/resume.dart';
 import '../src/home/data.dart';
 import '../src/home/designation.dart';
 import '../src/home/introduction.dart';
@@ -50,20 +52,11 @@ class _HomePageState extends State<HomePage> {
                     context: context,
                   ),
                   Designation(isMobile: true, context: context),
-                  SocialMediaBar(
-                    height: height,
+                  SocialMediaBar(height: height),
+                  About(fontSize: 24),
+                  OverflowBar(
+                    children: [Resume(width: 0)],
                   ),
-                  // About(fontSize: 24),
-                  // Padding(
-                  //   padding: EdgeInsets.only(bottom: height * 0.029),
-                  //   child: OverflowBar(
-                  //     children: [
-                  //       Resume(
-                  //         width: 0,
-                  //       ),
-                  //     ],
-                  //   ),
-                  // ),
                 ],
               ),
             );
@@ -87,17 +80,10 @@ class _HomePageState extends State<HomePage> {
                             )),
                         Designation(isMobile: false, context: context),
                         SocialMediaBar(height: height),
-                        // About(fontSize: 30),
-                        // Padding(
-                        //   padding: EdgeInsets.only(bottom: height * 0.026),
-                        //   child: Row(
-                        //     children: [
-                        //       Resume(
-                        //         width: width,
-                        //       ),
-                        //     ],
-                        //   ),
-                        // ),
+                        About(fontSize: 24),
+                        OverflowBar(
+                          children: [Resume(width: 0)],
+                        ),
                       ],
                     ),
                   ),

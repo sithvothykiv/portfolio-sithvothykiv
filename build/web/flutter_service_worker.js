@@ -58,7 +58,7 @@ const RESOURCES = {"canvaskit/chromium/canvaskit.js": "96ae916cd2d1b7320fff853ee
 "assets/assets/what_i_do/Postgresql_elephant.png": "b30452e7306485b0c3d6819b46fa6b58",
 "assets/assets/what_i_do/JavaScript-logo.png": "0cded3a3276425911d55a2552bf361bf",
 "assets/assets/what_i_do/flutter.png": "280061a25e491cd2ab4a6ffd889bc66c",
-"assets/assets/portfolio.json": "55d253eb809b90511d457af7f70ea947",
+"assets/assets/portfolio.json": "01ca7b8dcb89d79625547ec0635d1fc6",
 "assets/assets/experience/constant/experience.png": "8f6a768aa1f3a803088eff838313f7b0",
 "assets/assets/experience/credanic.png": "27b5605cf2f3291e4cfe71f4f97daaf2",
 "assets/assets/experience/coding-ninjas.png": "5b94a7d8ef90a9b60a3967745e044778",
@@ -78,8 +78,8 @@ const RESOURCES = {"canvaskit/chromium/canvaskit.js": "96ae916cd2d1b7320fff853ee
 "assets/FontManifest.json": "f0f4be009d67b49f6afb66286f706923",
 "version.json": "db8990b8a733cdd52065ba1549ba9aa5",
 "flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
-"index.html": "53c2ad069cb8df20b6a94de9cea2e72e",
-"/": "53c2ad069cb8df20b6a94de9cea2e72e",
+"index.html": "7c207252ee9dfdfc5e08cf6f81deb35d",
+"/": "7c207252ee9dfdfc5e08cf6f81deb35d",
 "main.dart.js": "1a1d839208c6538d67c42b33063c87f3",
 "manifest.json": "280eaea94c35c8957ca99c7926cd2701"};
 // The application shell files that are downloaded before a service worker can

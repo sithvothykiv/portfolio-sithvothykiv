@@ -27,7 +27,9 @@ class _AchievementsCardState extends State<AchievementsCard> {
     final double width = MediaQuery.of(context).size.width;
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
-      padding: EdgeInsets.only(top: isHover ? height * 0.005 : height * 0.01, bottom: !isHover ? height * 0.005 : height * 0.01),
+      padding: EdgeInsets.only(
+          top: isHover ? height * 0.005 : height * 0.01,
+          bottom: !isHover ? height * 0.005 : height * 0.01),
       child: InkWell(
         borderRadius: BorderRadius.circular(15),
         onHover: (bool value) {
@@ -38,7 +40,12 @@ class _AchievementsCardState extends State<AchievementsCard> {
         onTap: () => htmlOpenLink(widget.link),
         child: Container(
           alignment: Alignment.topCenter,
-          padding: EdgeInsets.only(top: height * 0.04, left: width * 0.015, right: width * 0.015, bottom: height * 0.04),
+          padding: EdgeInsets.only(
+            top: height * 0.04,
+            left: width * 0.015,
+            right: width * 0.015,
+            bottom: height * 0.04,
+          ),
           width: !widget.isMobile ? width * 0.28 : width,
           height: height * 0.25,
           decoration: BoxDecoration(
@@ -47,10 +54,17 @@ class _AchievementsCardState extends State<AchievementsCard> {
           ),
           child: Center(
             child: SingleChildScrollView(
-              child: CustomText(
-                text: widget.desc,
-                fontSize: 18,
-                color: Theme.of(context).primaryColor,
+              child: Text(
+                widget.desc,
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: 18,
+                  color: Theme.of(context).primaryColor,
+                  fontWeight: FontWeight.w500,
+                ),
+                maxLines: 6,
+                overflow: TextOverflow.ellipsis,
               ),
             ),
           ),

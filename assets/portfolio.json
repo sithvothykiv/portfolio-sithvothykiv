@@ -35,8 +35,8 @@
         "open_for_opportunities": "Yes",
         "picture": "me.png"
     },
-    "about": "A passionate Developer | Cloud Compute | DevOps | Data Scientist 🚀",
-    "bio": "MSIT Student. I have experience with Flutter, AWS Cloud, Python, Swift and other frameworks. Great understanding of Mobile App Development. Experience in responsive Web Development and UX/UI Design.",
+    "about": "A passionate Web/Mobile Developer | DevOps | Data Science 🚀",
+    "bio": "MSIT Student. I have experience with Flutter, AWS Cloud, Python, Swift and other frameworks. I Love Coding, Great understanding of Web/Mobile App Development. Experience in responsive Web/Mobile Development and UX/UI Design.",
     "what_i_do": {
         "tools": [
             "flutter.png",
@@ -144,9 +144,9 @@
         },
         "2": {
             "name": "Infinity Information & Apps Dev Co., Ltd.",
-            "role": "Mobile App Developer (Flutter)",
+            "role": "Mobile, Web Developer (Flutter, React)",
             "period": "May, 2021 - Present",
-            "description": "Working as a Mobile App Developer using Flutter to build, create, test, and develop applications on mobile devices.",
+            "description": "Working as a Mobile App Developer using Flutter to build, create, test, and develop applications on mobile devices and React build landing page website.",
             "image_name": "infinity-03.png"
         },
         "3": {
@@ -256,12 +256,22 @@
             "tech_stack_used": "Jenkins, Docker, Nexus, AWS/EC2, Wildfly",
             "description": "Build and Deploy Microservices configuration for Final School Project",
             "general_or_github_link": "https://github.com/UP-MSIT/Final-Project-Swarm-Deployment"
+        },
+        "15":{
+            "name": "Python, Food and Drink Menu",
+            "tech_stack_used": "Tkinter, Python, SQLite",
+            "description": "Using Python Tkinter to build Desktop Application for Final School Project",
+            "general_or_github_link": "https://github.com/UP-MSIT/tkinter-drink-shop"
         }
     },
     "achievements": {
         "1": {
             "description": "AWS Academy Graduate - AWS Academy Cloud Foundations",
             "link": "https://www.credly.com/badges/83c275cb-050c-49c7-ad7e-ed9ffce8a4ab/linked_in_profile"
+        },
+        "2": {
+            "description": "On Sunday, 4th June, 2023, MSIT students organized a Public Speaking Workshop on the topic “Leadership in Technology”",
+            "link": "https://www.puthisastra.edu.kh/up-voice/up-voice-vol-114-june-2023/"
         }
     }
 }
